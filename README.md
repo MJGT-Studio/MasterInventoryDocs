@@ -15,7 +15,9 @@ Thanks for purchasing Master Inventory follow this docs to learn how easy is to 
 
 ### First you need to migrate the following folder to your game.
 
-Add IMG1 here
+
+![Logo](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/img/Img1.png)
+
 
 ### Now you need to add the following component to you game controller
 
@@ -23,7 +25,7 @@ Add IMG1 here
 BP_MasterInventory
 ```
 
-add img2 here
+![Logo](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/img/img2.png)
 
 ### After you done this part you need to add the required interfaces to you controller so the master inventory can send you callback
 when the player for example use a item drop and etc, follow the steps.
@@ -31,24 +33,24 @@ when the player for example use a item drop and etc, follow the steps.
 
 #### 1: Click in the class settings
 
-add img3 here
+![Logo](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/img/img3.png)
 
 #### 2: Add the Bpi Actor Inventory interface
 
-add img4 here
+![Logo](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/img/img4.png)
 
 #### 3: Now you need to implement return interfaces follow the imgs
 
 This interface will return where you want to spawn the item normaly you create a spawn point and attach to the character.
 
-add img5
+![Logo](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/img/img5.png)
 
 This interface will return the inventory reference THIS IS VERY IMPORTANT
 
-add img 6
+![Logo](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/img/img6.png)
 
 #### 4: Now you need following nodes from BP_Master Inventory Controller example to your controler, those nodes they will controll the item callback, item transfer and component initialization
 
- add img7
+![Logo](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/img/img7.png)
 
  ### Congratulations you have install the master inventory
