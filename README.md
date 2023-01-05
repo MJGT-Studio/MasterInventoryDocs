@@ -58,4 +58,5 @@ This interface will return the inventory reference THIS IS VERY IMPORTANT
 ## Videos
 
 [tutorial-setup](https://youtu.be/87jMTX83RpI)
+[Asset-Link](https://www.unrealengine.com/marketplace/en-US/product/b5c3ee6da047491a958b499c7f027713)
 
