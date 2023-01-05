@@ -54,3 +54,8 @@ This interface will return the inventory reference THIS IS VERY IMPORTANT
 ![Logo](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/img/img7.png)
 
  ### Congratulations you have successfully install the master inventory
+
+## Videos
+
+[tutorial-setup](https://youtu.be/87jMTX83RpI)
+
