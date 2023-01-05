@@ -49,8 +49,8 @@ This interface will return the inventory reference THIS IS VERY IMPORTANT
 
 ![Logo](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/img/img6.png)
 
-#### 4: Now you need following nodes from BP_Master Inventory Controller example to your controler, those nodes they will controll the item callback, item transfer and component initialization
+#### 4: Now copy they following nodes highlighted by (MASTER INVENTORY) from BP_Master Inventory Controller example to your controller, those nodes they will control the inventory callback actions like item transfer, item usage and etc.
 
 ![Logo](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/img/img7.png)
 
- ### Congratulations you have install the master inventory
+ ### Congratulations you have successfully install the master inventory
