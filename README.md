@@ -19,7 +19,7 @@ Thanks for purchasing Master Inventory follow this docs to learn how easy is to 
 ![Logo](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/img/Img1.png)
 
 
-### Now you need to add the following component to you game controller
+### Now you need to add the following component to your game controller
 
 ```javascript
 BP_MasterInventory
