@@ -1,4 +1,3 @@
-
 # Master Inventory
 
 Thanks for purchasing Master Inventory follow this docs to learn how easy is to implement in you game.
@@ -55,8 +54,21 @@ This interface will return the inventory reference THIS IS VERY IMPORTANT
 
  ### Congratulations you have successfully install the master inventory
 
+
+## Update the controls
+
+Master Inventory is using the new unreal engine input system call (Input Mapping Context) is a much better solution that the normal input system because allow you to have all you controls in one place, to update the navigate to the folder MasterInventory/inventory/Inputs
+
+![Logo](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/img/img8.png)
+To add new inputs just press in the plus button.
+
+## Craft system
+To create new recipes onpen the navigate to MasterInventory/inventory/Variables/CraftSystem and open the file DT_CraftRecipies that control the recipes input and outputs
+![Logo](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/img/img9.png)
+
+Note the craftPosition varaible will be use to indicate the position where the item need to be place by the player in order to craft, note that is case of duplate recipes the system will pickup the first one.
+
 ## Videos
 
 [tutorial-setup](https://youtu.be/87jMTX83RpI)
 [Asset-Link](https://www.unrealengine.com/marketplace/en-US/product/b5c3ee6da047491a958b499c7f027713)
-
