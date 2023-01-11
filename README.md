@@ -63,10 +63,10 @@ Master Inventory is using the new unreal engine input system call (Input Mapping
 To add new inputs just press in the plus button.
 
 ## Craft system
-To create new recipes onpen the navigate to MasterInventory/inventory/Variables/CraftSystem and open the file DT_CraftRecipies that control the recipes input and outputs
+To create new recipes open the navigate to MasterInventory/inventory/Variables/CraftSystem and open the file DT_CraftRecipes that control the recipes input and outputs
 ![Logo](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/img/img9.png)
 
-Note the craftPosition varaible will be use to indicate the position where the item need to be place by the player in order to craft, note that is case of duplate recipes the system will pickup the first one.
+Note the craftPosition variable will be use to indicate the position where the item need to be place by the player in order to craft, note that is case of duplicate recipes the system will pickup the first one.
 
 ## Videos
 
