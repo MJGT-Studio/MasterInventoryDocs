@@ -102,7 +102,7 @@ When editing the item pay attention to the following fields
 | Drop Not Allowed | That means the item once pickup will not be dropped |
 | Max Durability | How durable the item is. |
 | Current Durability | If below 0 the item will be deleted |
-| Attribute Boost | Lets you want to increase the player health you can create custom stats and use this in the callback |
+| Attribute Boost | Lets say you want to increase the player health you can create custom stats and use this in the callback |
 
 ## Item Picker (BP_BaseItemPicker)
 The item Picker is what the player or any actor with the Master Inventory can interact with, here is a list of functions that you can override when customizing a item, i recommend creating a children actor so you don't override the default MasterInventory Picker.
