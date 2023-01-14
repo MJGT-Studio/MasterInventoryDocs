@@ -137,3 +137,5 @@ When editing the item pay attention to the following fields
 
 [tutorial-setup](https://youtu.be/87jMTX83RpI)
 [Asset-Link](https://www.unrealengine.com/marketplace/en-US/product/b5c3ee6da047491a958b499c7f027713)
+
+beta 1.2.1
