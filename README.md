@@ -1,1 +1,1 @@
-## Master Invnetory
+## Master inventory
