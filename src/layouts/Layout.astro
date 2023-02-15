@@ -58,6 +58,11 @@ const makeTitle = title
   <body>
     <Navbar />
     <slot />
+    <footer class="my-20">
+        <p class="text-center text-sm text-slate-500">
+          Copyright © {new Date().getFullYear()} Master Inventory. All rights reserved.
+        </p>
+    </footer>
     <!-- <Footer /> -->
     <style is:global>
       /* Improve Page speed */
