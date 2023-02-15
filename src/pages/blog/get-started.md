@@ -27,7 +27,7 @@ Thanks for purchasing Master Inventory follow this docs to learn how easy is to 
 
 ### First migrate the project folder to your project folder
 
-![Img1](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/GetStarted/Img1.png)
+![Img1](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/GetStarted/img1.png)
 
 
 ### New in your player controller add the master inventory component
@@ -35,7 +35,7 @@ Thanks for purchasing Master Inventory follow this docs to learn how easy is to 
 ```javascript
 BP_MasterInventory
 ```
-![Img2](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/GetStarted/Img2.png)
+![Img2](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/GetStarted/img2.png)
 
 ### New you need to add the master inventory interface to your player controller
 
@@ -48,25 +48,25 @@ Now follow the next steps
 
 ### 1: Click in the class settings
 
-![Img3](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/GetStarted/Img3.png)
+![Img3](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/GetStarted/img3.png)
 
 ### 2: Add the Bpi Actor Inventory interface
 
-![Img4](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/GetStarted/Img4.png)
+![Img4](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/GetStarted/img4.png)
 
 ### 3: Now you need to implement return interfaces follow the imgs
 
 This interface will return where you want to spawn the item normally you create a spawn point and attach to the character.
 
-![Img5](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/GetStarted/Img5.png)
+![Img5](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/GetStarted/img5.png)
 
 This interface will return the inventory reference THIS IS VERY IMPORTANT
 
-![Img6](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/GetStarted/Img6.png)
+![Img6](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/GetStarted/img6.png)
 
 Now if you look in the demo controller you will see the implementation of some events that you can use to customize the inventory, copy and paste the code in your controller and customize it to your needs.
 
-![Img7](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/GetStarted/Img7.png)
+![Img7](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/GetStarted/img7.png)
 
 ### Congratulations you have successfully install the master inventory
 

@@ -21,8 +21,8 @@ The easiest way to create a new item is to duplicate existing item and change th
 
 In this folder open the follow file DT_Item, this file controls all the inventory items available
 
-![Img1](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/ItemCreate/Img1.png)
-![Img2](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/ItemCreate/Img2.png)
+![Img1](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/ItemCreate/img1.png)
+![Img2](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/ItemCreate/img2.png)
 
 When editing the item pay attention to the following fields
 
