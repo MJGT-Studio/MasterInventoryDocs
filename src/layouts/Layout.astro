@@ -55,7 +55,7 @@ const makeTitle = title
       }}
     />
   </head>
-  <body>
+  <body class="bg-master-100" >
     <Navbar />
     <slot />
     <footer class="my-20">
@@ -70,6 +70,123 @@ const makeTitle = title
       img {
         content-visibility: auto;
       }
+
+        h1 {
+            @apply text-yellow-200 !important;
+            @apply text-5xl font-bold !important;
+        }
+        h1:hover {
+            @apply text-yellow-500 !important;
+            @apply text-5xl font-bold !important;
+            @apply transform !important;
+            @apply scale-105 !important;
+            @apply transition-all !important;
+            @apply duration-500 !important;
+        }
+        h2:hover {
+            @apply text-yellow-300 !important;
+            @apply font-bold !important;
+            @apply transform !important;
+            @apply scale-105 !important;
+            @apply transition-all !important;
+            @apply duration-500 !important;
+        }
+        h3:hover {
+            @apply text-yellow-400 !important;
+            @apply font-bold !important;
+            @apply transform !important;
+            @apply scale-105 !important;
+            @apply transition-all !important;
+            @apply duration-500 !important;
+        }
+
+
+        h2 {
+            @apply text-yellow-300 !important;
+            @apply font-bold !important;
+        }
+
+        h3 {
+            @apply text-yellow-400 !important;
+            @apply font-bold !important;
+        }
+        span {
+            @apply text-rarity-artifact;
+        }
+        li {
+            @apply text-master-text-100;
+        }
+        time {
+            @apply text-rarity-epic;
+        }
+        p {
+            @apply text-master-text-100;
+            @apply text-xl text-center;
+        }
+        a {
+            @apply text-yellow-500 !important;
+        }
+
+        img {
+            @apply rounded !important;
+            @apply border-yellow-500 !important;
+            @apply border-2 !important;
+            @apply hover:shadow-2xl !important;
+            @apply hover:scale-105 !important;
+            @apply transition-all !important;
+            @apply duration-500 !important;
+
+        }
+
+        ::selection {
+            @apply bg-yellow-500 !important;
+            @apply text-master-100 !important;
+        }
+
+        table {
+            @apply border-collapse !important;
+            @apply border-2 !important;
+            @apply border-yellow-500 !important;
+            @apply rounded !important;
+            @apply text-center !important;
+            @apply text-xl !important;
+            @apply text-master-text-100 !important;
+            @apply bg-master-200 !important;
+        }
+        th {
+            @apply border-2 !important;
+            @apply border-yellow-500 !important;
+            @apply bg-yellow-500 !important;
+            @apply text-master-100 !important;
+            @apply text-xl !important;
+        }
+
+        tr:hover {
+            @apply bg-yellow-500 !important;
+            @apply text-master-100 !important;
+            @apply transform !important;
+            @apply scale-105 !important;
+            @apply transition-all !important;
+            @apply duration-500 !important;
+            @apply border-2 !important;
+            @apply border-yellow-500 !important;
+            @apply rounded !important;
+        }
+        /* For all the link we are goin to add a yellow border */
+        .rpgButton {
+            @apply border-yellow-500;
+            @apply border-2;
+            @apply rounded;
+            @apply p-2;
+            @apply text-yellow-500;
+            @apply bg-master-200;
+        }
+        .rpgButton:hover {
+            @apply transform;
+            @apply scale-105;
+            @apply transition-all;
+            @apply duration-500;
+        }
     </style>
   </body>
 </html>

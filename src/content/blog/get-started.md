@@ -30,14 +30,14 @@ Thanks for purchasing Master Inventory follow this docs to learn how easy is to 
 ![Img1](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/GetStarted/img1.png)
 
 
-### New in your player controller add the master inventory component
+### Now in your player controller add the master inventory component
 
 ```javascript
 BP_MasterInventory
 ```
 ![Img2](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/GetStarted/img2.png)
 
-### New you need to add the master inventory interface to your player controller
+### Now you need to add the master inventory interface to your player controller
 
 look for the interface in the content browser call
 
