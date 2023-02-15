@@ -5,7 +5,8 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: "https://mjgt-studios.github.io/MasterInventoryDocs/",
+  site: "https://mjgt-studios.github.io",
+  base: '/MasterInventoryDocs',
   integrations: [
     tailwind(),
     image({
