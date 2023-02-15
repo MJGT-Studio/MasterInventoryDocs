@@ -16,6 +16,6 @@ tags: [started, docs, controls]
 
 Master Inventory is using the new unreal engine input system call (Input Mapping Context) is a much better solution that the normal input system because allow you to have all you controls in one place, to update the navigate to the folder MasterInventory/inventory/Inputs
 
-![Img1](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/Controlls/img1.png)
+![Img1](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/Controlls/im1.png)
 To add new inputs just press in the plus button.
 
