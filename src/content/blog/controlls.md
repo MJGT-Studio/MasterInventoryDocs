@@ -3,7 +3,7 @@ draft: false
 title: Master Inventory - Controls
 snippet: "Learn the basics of Master Inventory Controls"
 image: {
-    src: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?&fit=crop&w=430&h=240",
+    src: "https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/PostImgs/Controls.png",
     alt: "full stack web development"
 }
 publishDate: "2022-11-08 11:39"
