@@ -7,7 +7,7 @@ image: {
     alt: "full stack web development"
 }
 publishDate: "2023-02-14 11:39"
-category: "controls"
+category: "started"
 author: Mario Tarosso
 tags: [started, docs, craft]
 ---
