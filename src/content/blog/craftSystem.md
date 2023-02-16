@@ -3,7 +3,7 @@ draft: false
 title: Master Inventory - Craft system
 snippet: "Learn the basics of Master Inventory Craft system"
 image: {
-    src: "https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/PostImgs/Controls.png",
+    src: "https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/PostImgs/Craft.png",
     alt: "full stack web development"
 }
 publishDate: "2022-11-08 11:39"

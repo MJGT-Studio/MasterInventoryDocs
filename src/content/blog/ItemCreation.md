@@ -47,6 +47,9 @@ When editing the item pay attention to the following fields
 | Max Durability | How durable the item is. |
 | Current Durability | If below 0 the item will be deleted |
 | Attribute Boost | Lets say you want to increase the player health you can create custom stats and use this in the callback |
+| Use Cooldown | How long the item will be on cooldown |
+| Cooldown Time | How long the item will be on cooldown |
+| ActionSlotAction | What action you want to use when the player use the item in the action slots. |
 
 ## Item Picker (BP_BaseItemPicker)
 The item Picker is what the player or any actor with the Master Inventory can interact with, here is a list of functions that you can override when customizing a item, i recommend creating a children actor so you don't override the default MasterInventory Picker.
@@ -70,7 +73,7 @@ The chest base actor is quite simple, the best also extends from BP_BaseItemPick
 ## ItemAttributes
 
 To manage ItemAttributes navigate to (MasterInventory/inventory/Variables/Items/ItemAttributes) open the file DT_ItemAttributes
-![img13](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/img/img13.png)
+![Img3](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/ItemCreate/img3.png)
 
 When editing the item pay attention to the following fields
 | Variable Name             | Description                                                                |
@@ -79,3 +82,6 @@ When editing the item pay attention to the following fields
 | Color | Color that will display in the master inventory |
 | Icon | Icon that will display in the master inventory |
 
+Example of how to use the ItemAttributes is in the sword item, you can use the item attributes to create custom stats for your game, and the stats should be used in the item details widget.
+
+![Img4](https://raw.githubusercontent.com/mjgt-Studios/MasterInventoryDocs/main/imgs/ItemCreate/img4.png)

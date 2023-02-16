@@ -121,7 +121,6 @@ const makeTitle = title
         }
         p {
             @apply text-master-text-100;
-            @apply text-xl text-center;
         }
         a {
             @apply text-yellow-500 !important;
@@ -135,7 +134,10 @@ const makeTitle = title
             @apply hover:scale-105 !important;
             @apply transition-all !important;
             @apply duration-500 !important;
+        }
 
+        .img-modal {
+            @apply border-rarity-epic !important;
         }
 
         ::selection {
@@ -153,6 +155,12 @@ const makeTitle = title
             @apply text-master-text-100 !important;
             @apply bg-master-200 !important;
         }
+        /* Add a cell divider yellow border */
+        td {
+            @apply border-2 !important;
+            @apply border-rarity-epic !important;
+        }
+
         th {
             @apply border-2 !important;
             @apply border-yellow-500 !important;
@@ -188,5 +196,30 @@ const makeTitle = title
             @apply duration-500;
         }
     </style>
+
+    <script>
+        // When the user lcick in any image we are goin to show a modal with the image
+        const images = document.querySelectorAll("img");
+        images.forEach((image) => {
+            image.addEventListener("click", () => {
+                const modal = document.createElement("div");
+                modal.classList.add("fixed");
+                modal.classList.add("top-0");
+                modal.classList.add("left-0");
+                modal.classList.add("w-full");
+                modal.classList.add("h-full");
+                modal.classList.add("bg-black");
+                modal.classList.add("bg-opacity-80");
+                modal.classList.add("z-50");
+                modal.innerHTML = `
+                    <img src="${image.src}" alt="${image.alt}" class="max-w-full max-h-full mx-auto my-auto rounded img-modal" />
+                `;
+                document.body.appendChild(modal);
+                modal.addEventListener("click", () => {
+                    modal.remove();
+                });
+            });
+        });
+    </script>
   </body>
 </html>
