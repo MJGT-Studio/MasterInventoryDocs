@@ -23,6 +23,7 @@ import logo from 'assets/logo.png';
     <h1
       class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
       Master Inventory
+      <span class="text-slate-600">v<span id="version">0.0.0</span></span>
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
         Master inventory was design to be a simple and powerful inventory system for any kind of game.
@@ -50,4 +51,13 @@ import logo from 'assets/logo.png';
       </Link>
     </div>
   </div>
+
+  <script>
+    // Get the project version from the github api
+    fetch("https://api.github.com/repos/mjgt-Studios/MasterInventoryDocs/releases/latest")
+      .then((response) => response.json())
+      .then((data) => {
+        document.getElementById("version").innerHTML = data.tag_name;
+      });
+  </script>
 </main>
