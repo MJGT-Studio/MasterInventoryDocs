@@ -65,4 +65,4 @@ Now lets create a simple quest, lets you want the player to find cubes in the wo
 | `WhenCompleteCanTriggerEventCallBack?` | this will prevent a infinite loop once the quest has been completed |
 
 
-Pleas for better understanding check the example project you can also check this  - [video](https://youtu.be/kFMVHpIeuqo) for a better understanding
+Please for better understanding check the demo level you can also check this  - [video](https://youtu.be/kFMVHpIeuqo).
