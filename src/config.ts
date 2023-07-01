@@ -28,7 +28,7 @@ export const SiteMetadata = {
   },
   location: 'Rivendell, Middle Earth',
   latlng: [-10.512686445803297, -138.6706467796286] as [number, number],
-  repository: 'https://github.com/hellotham/hello-astro',
+  repository: 'https://github.com/MJGT-Studio/MasterInventoryDocs',
   buildTime: new Date()
 }
 
