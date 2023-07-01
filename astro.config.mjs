@@ -21,8 +21,8 @@ export default defineConfig({
       noExternal: ['swiper', 'leaflet']
     }
   },
-  site: 'https://mjgt-studio.github.io',
-  base: '/',
+  site: "https://mjgt-studios.github.io",
+  base: '/MasterInventoryDocs',
   integrations: [tailwind(), sitemap(), mdx(), alpinejs(), robotsTxt(), markdoc()],
   experimental: {
     assets: true
