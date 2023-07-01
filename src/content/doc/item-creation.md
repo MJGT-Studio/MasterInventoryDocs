@@ -12,8 +12,8 @@ The easiest way to create a new item is to duplicate existing item and change th
 
 In this folder open the follow file DT_Item, this file controls all the inventory items available
 
-![Img1](/public/docs/itemCreation/img1.png)
-![Img2](/public/docs/itemCreation/img2.png)
+![Img1](../../assets/docs/itemCreation/img1.png)
+![Img2](../../assets/docs/itemCreation/img2.png)
 
 When editing the item pay attention to the following fields
 
@@ -65,7 +65,7 @@ The chest base actor is quite simple, the best also extends from BP_BaseItemPick
 ## ItemAttributes
 
 To manage ItemAttributes navigate to (MasterInventory/inventory/Variables/Items/ItemAttributes) open the file DT_ItemAttributes
-![img3](/public/docs/itemCreation/img3.png)
+![img3](../../assets/docs/itemCreation/img3.png)
 
 When editing the item pay attention to the following fields
 | Variable Name             | Description                                                                |
@@ -76,4 +76,4 @@ When editing the item pay attention to the following fields
 
 Example of how to use the ItemAttributes is in the sword item, you can use the item attributes to create custom stats for your game, and the stats should be used in the item details widget.
 
-![img4](/public/docs/itemCreation/img4.png)
+![img4](../../assets/docs/itemCreation/img4.png)

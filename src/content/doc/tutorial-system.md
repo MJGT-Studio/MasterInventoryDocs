@@ -12,7 +12,7 @@ To create a tutorial you need to create a new tutorial asset, to do that you nee
 
 `MasterRpgFramework -> MasterInventory -> Variables -> TutorialAndTipsSystem -> DT_TutorialsAndTips`
 
-![Img1](/public/docs/tutorial/img1.png)
+![Img1](../../assets/docs/tutorial/img1.png)
 
 Add a new row and fill the data, check the table below for the description of the data
 
@@ -30,4 +30,4 @@ Add a new row and fill the data, check the table below for the description of th
 After you have created the tutorial you can add the tutorial trigger to the world using this actor, and you can select the tutorial you want to trigger
 `MasterRpgFramework -> MasterInventory -> Blueprints -> Tutorial -> BP_BaseTutorialTrigger`
 
-![Img2](/public/docs/tutorial/img2.png)
+![Img2](../../assets/docs/tutorial/img2.png)

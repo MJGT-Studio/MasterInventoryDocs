@@ -25,7 +25,7 @@ Master UI comes with a widget system that allow you to create a widget for your 
 
 ### WBP_Master_ButtonImg
 
-![Img1](/public/docs/masterUi/img1.png)
+![Img1](../../assets/docs/masterUi/img1.png)
 
 #### Variables
 
@@ -48,7 +48,7 @@ Master UI comes with a widget system that allow you to create a widget for your 
 
 ### WBP_Master_ButtonText
 
-![Img2](/public/docs/masterUi/img2.png)
+![Img2](../../assets/docs/masterUi/img2.png)
 
 #### Variables
 
@@ -72,7 +72,7 @@ Master UI comes with a widget system that allow you to create a widget for your 
 
 ### WBP_Master_ButtonTextWithIcon
 
-![Img3](/public/docs/masterUi/img3.png)
+![Img3](../../assets/docs/masterUi/img3.png)
 
 #### Variables
 
@@ -100,7 +100,7 @@ Master UI comes with a widget system that allow you to create a widget for your 
 
 ### WBP_Master_IconBoxDisplay
 
-![Img4](/public/docs/masterUi/img4.png)
+![Img4](../../assets/docs/masterUi/img4.png)
 
 #### Variables
 
@@ -121,7 +121,7 @@ Master UI comes with a widget system that allow you to create a widget for your 
 
 You can use this widget to create a expandable area, you can use this widget to create a settings menu for example.
 
-![Img5](/public/docs/masterUi/img5.png)
+![Img5](../../assets/docs/masterUi/img5.png)
 
 #### Methods
 
@@ -132,7 +132,7 @@ You can use this widget to create a expandable area, you can use this widget to 
 
 ### WBP_Master_InputText
 
-![Img6](/public/docs/masterUi/img6.png)
+![Img6](../../assets/docs/masterUi/img6.png)
 
 #### Variables
 
@@ -154,7 +154,7 @@ You can use this widget to create a expandable area, you can use this widget to 
 
 ### WBP_Master_ComboBox
 
-![Img7](/public/docs/masterUi/img7.png)
+![Img7](../../assets/docs/masterUi/img7.png)
 
 #### Variables
 
@@ -178,7 +178,7 @@ You can use this widget to create a expandable area, you can use this widget to 
 
 ### WBP_Master_ComplexList
 
-![Img8](/public/docs/masterUi/img8.png)
+![Img8](../../assets/docs/masterUi/img8.png)
 
 #### Variables
 
@@ -200,7 +200,7 @@ You can use this widget to create a expandable area, you can use this widget to 
 
 ### WBP_Master_SimpleList
 
-![Img9](/public/docs/masterUi/img9.png)
+![Img9](../../assets/docs/masterUi/img9.png)
 
 #### Variables
 
@@ -224,7 +224,7 @@ You can use this widget to create a expandable area, you can use this widget to 
 
 ### WBP_LogMessage
 
-![img10](/public/docs/masterUi/img10.png)
+![img10](../../assets/docs/masterUi/img10.png)
 
 #### Variables
 
@@ -239,7 +239,7 @@ You can use this widget to create a expandable area, you can use this widget to 
 
 ### WBP_Master_Circular
 
-![Img11](/public/docs/masterUi/img11.png)
+![Img11](../../assets/docs/masterUi/img11.png)
 
 #### Variables
 
@@ -261,7 +261,7 @@ You can use this widget to create a expandable area, you can use this widget to 
 
 ### WBP_Master_ProgressBar
 
-![img12](/public/docs/masterUi/img12.png)
+![img12](../../assets/docs/masterUi/img12.png)
 
 #### Variables
 
@@ -292,7 +292,7 @@ You can use this widget to create a expandable area, you can use this widget to 
 
 ### WBP_BaseItemSlot
 
-![Img13](/public/docs/masterUi/img13.png)
+![Img13](../../assets/docs/masterUi/img13.png)
 
 #### Variables
 
@@ -334,7 +334,7 @@ You can use this widget to create a expandable area, you can use this widget to 
 
 ### WBP_Spinner
 
-![Img14](/public/docs/masterUi/img14.png)
+![Img14](../../assets/docs/masterUi/img14.png)
 
 #### Methods
 
@@ -346,7 +346,7 @@ You can use this widget to create a expandable area, you can use this widget to 
 
 ### WBP_DefaulPlayerStats
 
-![Img15](/public/docs/masterUi/img15.png)
+![Img15](../../assets/docs/masterUi/img15.png)
 
 #### Variables
 
@@ -375,7 +375,7 @@ You can use this widget to create a expandable area, you can use this widget to 
 
 ### WBP_DefaulPlayerStatsCircular
 
-![Img16](/public/docs/masterUi/img16.png)
+![Img16](../../assets/docs/masterUi/img16.png)
 
 #### Variables
 
@@ -406,7 +406,7 @@ You can use this widget to create a expandable area, you can use this widget to 
 
 ### WBP_AnimatedNumberText
 
-![Img17](/public/docs/masterUi/img17.png)
+![Img17](../../assets/docs/masterUi/img17.png)
 
 #### Variables
 
@@ -428,7 +428,7 @@ You can use this widget to create a expandable area, you can use this widget to 
 
 ### WBP_Master_Title
 
-![Img18](/public/docs/masterUi/img18.png)
+![Img18](../../assets/docs/masterUi/img18.png)
 
 #### Variables
 
@@ -446,7 +446,7 @@ You can use this widget to create a expandable area, you can use this widget to 
 
 ### WBP_Master_TitleWithIcon
 
-![Img19](/public/docs/masterUi/img19.png)
+![Img19](../../assets/docs/masterUi/img19.png)
 
 #### Variables
 

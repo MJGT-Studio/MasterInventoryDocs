@@ -11,7 +11,7 @@ Lets create a simple task, lets you want the player to find cubes in the world y
 now open this file in lets add the task
 
 
-![Img1](/public/docs/quest/img1.png)
+![Img1](../../assets/docs/quest/img1.png)
 Table structure
 
 | Parameter |  Description                       |
@@ -32,7 +32,7 @@ Table structure
 Now lets create a simple quest, lets you want the player to find cubes in the world you can create this quest in this location
 `MasterInventory/inventory/Variables/QuestSystem/Quests/DT_MasterQuests.uasset`
 
-![Img2](/public/docs/quest/img2.png)
+![Img2](../../assets/docs/quest/img2.png)
 
 | Parameter |  Description                       |
 | :-------- |  :-------------------------------- |

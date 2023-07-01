@@ -17,7 +17,7 @@ Thanks for purchasing Master Inventory follow this docs to learn how easy is to 
 
 ### 1: First migrate the project folder to your project folder
 
-![Img1](/public/docs/getStarted/img1.png)
+![Img1](../../assets/docs/getStarted/img1.png)
 
 
 ### 2: Now in your player controller add the master inventory component
@@ -25,7 +25,7 @@ Thanks for purchasing Master Inventory follow this docs to learn how easy is to 
 ```javascript
 BP_MasterInventory
 ```
-![Img1](/public/docs/getStarted/img2.png)
+![Img1](../../assets/docs/getStarted/img2.png)
 
 ### 3: Now you need to add the master inventory interface to your player controller
 
@@ -38,25 +38,25 @@ To implement the interface follow the next steps
 
 ### 1: Click in the class settings
 
-![Img3](/public/docs/getStarted/img3.png)
+![Img3](../../assets/docs/getStarted/img3.png)
 
 ### 2: Add the [BP_MasterInventory]('#') to the player controller
 
-![Img4](/public/docs/getStarted/img4.png)
+![Img4](../../assets/docs/getStarted/img4.png)
 
 ### 3: Now you need to implement return interfaces follow the imgs
 
 This interface will return where you want to spawn the item normally you create a spawn point and attach to the character.
 
-![Img5](/public/docs/getStarted/img5.png)
+![Img5](../../assets/docs/getStarted/img5.png)
 
 This interface will return the inventory reference `THIS IS VERY IMPORTANT`
 
-![Img6](/public/docs/getStarted/img6.png)
+![Img6](../../assets/docs/getStarted/img6.png)
 
 Now if you look in the demo controller you will see the implementation of some events that you can use to customize the inventory, copy and paste the code in your controller and customize it to your needs.
 
-![img7](/public/docs/getStarted/img7.png)
+![img7](../../assets/docs/getStarted/img7.png)
 
 ### Congratulations you have successfully install the master inventory
 

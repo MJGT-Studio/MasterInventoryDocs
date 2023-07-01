@@ -11,7 +11,7 @@ Master Inventory also comes with a powerful talent system that allows you to add
 Creating a new talent system.
 
 1. Open a new `DT_TalentsList` Locate at `MasterInventory/Content/MasterRpgFramework/MasterInventory/Variables/TalentSystem/DT_TalentsList`
-![Img1](/public/docs/talentsystem/img01.png)
+![Img1](../../assets/docs/talentsystem/img01.png)
 
 | Parameter |  Description                       |
 | :-------- |  :-------------------------------- |
@@ -28,14 +28,14 @@ Creating a new talent system.
 ## Talent class trigger
 
 This class will be used to create the talent logic, this class must inherit from `BP_BaseTalentActor` class, lets take this `BP_StarterHealth` as example.
-![Img2](/public/docs/talentsystem/img02.png)
+![Img2](../../assets/docs/talentsystem/img02.png)
 
 This class have 2 main method you can override, `UnlockTalent` and `TalentRevert`, this methods will be called when the talent is unlocked or reverted.
 
 ## Creating a new talent tree
 
 Lets take this as example `WBP_TalentSelector01` locate at `MasterInventory/Content/MasterRpgFramework/MasterInventory/Ui/Talents/TalentListsWidget/WBP_TalentSelector01`
-![Img3](/public/docs/talentsystem/img03.png)
+![Img3](../../assets/docs/talentsystem/img03.png)
 if you follow this example you should be able to create a new talent tree.
 
 ## Information links

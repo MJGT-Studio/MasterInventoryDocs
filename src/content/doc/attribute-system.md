@@ -11,10 +11,10 @@ Master Inventory also comes with a powerful attribute system that allows you to 
 The way the attribute system works is attached to the `BP_MasterInventory` component to add attributes systems to the player, do the following:
 
 1. Open the `BP_MasterInventory` component and find the variable `Actor Attribute`.
-![Img1](/public/docs/attribute/img01.png)
+![Img1](../../assets/docs/attribute/img01.png)
 
 2. Click in the plus button to add a new attribute and follow the configuration below:
-![Img2](/public/docs/attribute/img02.png)
+![Img2](../../assets/docs/attribute/img02.png)
 
 In this image we have the following configuration variables:
 
@@ -31,10 +31,10 @@ In this image we have the following configuration variables:
 To create a new attribute, do the following:
 
 1. Open the `DT_Attributes` located at `MasterInventory/Content/MasterRpgFramework/MasterInventory/Variables/Items/ItemAttributes/DT_Attributes`.
-![Img3](/public/docs/attribute/img03.png)
+![Img3](../../assets/docs/attribute/img03.png)
 
 2. Open the datatable and add a new row, then follow the configuration below:
-![Img4](/public/docs/attribute/img04.png)
+![Img4](../../assets/docs/attribute/img04.png)
 
 In this image we have the following configuration variables:
 
@@ -47,10 +47,10 @@ In this image we have the following configuration variables:
 |Category | this is the category of the attribute, also a Enum located at `MasterInventory/Content/MasterRpgFramework/MasterInventory/Variables/Items/ItemAttributes/E_AttributeCategory`|
 
 Now for the category anything with the category of main it will show in the main bars.
-![Img5](/public/docs/attribute/img05.png)
+![Img5](../../assets/docs/attribute/img05.png)
 
 everything else will be display in the character sheet.
-![Img6](/public/docs/attribute/img06.png)
+![Img6](../../assets/docs/attribute/img06.png)
 
 ## Manage `BP_MasterInventory` attributes methods
 
