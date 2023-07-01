@@ -36,13 +36,53 @@ const { frontmatter } = Astro.props
         document.documentElement.classList.remove('dark')
       }
     </script>
-    <style is:inline>
+    <style is:global>
       [x-cloak] { display: none !important; }
       .markmap > svg {
         width: 100%;
         height: 400px;
       }
-      </style>
+
+      .text-gradient {
+        @apply bg-gradient-to-r from-rose-500 to-orange-500 bg-clip-text text-transparent;
+      }
+
+      .bg-gradient {
+        @apply bg-gradient-to-r from-orange-500 to-rose-500;
+      }
+
+      .bg-gradient-dark {
+        @apply bg-gradient-to-r from-slate-900 to-slate-700;
+      }
+
+      .bg-gradient-poppy {
+        @apply bg-gradient-to-r from-rose-400 to-red-500;
+      }
+
+      p {
+        /* @apply text-master-text-100; */
+      }
+
+      a {
+        @apply text-gradient;
+      }
+
+      /* For all the link we are goin to add a yellow border */
+      .rpgButton {
+            @apply border-yellow-500;
+            @apply border-2;
+            @apply rounded;
+            @apply p-2;
+            @apply text-yellow-500;
+            @apply bg-gray-900;
+        }
+        .rpgButton:hover {
+            @apply transform;
+            @apply scale-105;
+            @apply transition-all;
+            @apply duration-500;
+        }
+    </style>
     {frontmatter.extra?.includes('math') &&
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
     }
