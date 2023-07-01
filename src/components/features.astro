@@ -1,69 +1,75 @@
 ---
-// @ts-ignore
-import { Icon } from "astro-icon";
+import { Icon } from 'astro-icon'
 
 const features = [
-  {
-    title: "Bring Your Own Framework",
-    description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
-  },
-  {
-    title: "100% Static HTML, No JS",
-    description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
-  },
-  {
-    title: "On-Demand Components",
-    description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
-  },
-  {
-    title: "Broad Integration",
-    description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
-  },
-  {
-    title: "SEO Enabled",
-    description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
-  },
-  {
-    title: "Community",
-    description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
-  },
-];
+    {
+        name: 'Modular System',
+        description:
+            'Easily add or remove features depending on your needs.',
+        icon: 'cube-transparent'
+    },
+    {
+        name: 'Quest system',
+        description:
+            'Explore new challenges and earn rewards with a new quest system',
+        icon: 'clipboard-list'
+    },
+    {
+        name: 'Talent system',
+        description:
+            'Unlock new abilities and customize your character with a talent system',
+        icon: 'lightning-bolt'
+    },
+    {
+        name: 'Easy setup',
+        description:
+            'Get started in minutes with a simple setup process',
+        icon: 'cog'
+    }
+]
 ---
 
-<div class="mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
-  </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
-  </p>
-</div>
+<div class="bg-gray-100 py-12 dark:bg-gray-800">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+            <h2
+                class="text-base font-semibold uppercase tracking-wide text-black dark:text-white">
+                Features
+            </h2>
+            <p
+                class="text-gradient mt-2 text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
+                A better way to integrate Inventory systems for your game.
+            </p>
+            <p class="mt-4 max-w-2xl text-xl text-gray-600 dark:text-gray-300 lg:mx-auto">
+                Master Inventory is a good starting point for your next project. It is a simple, yet powerful Unreal engine asset that allows you to easily integrate an inventory system into your game.
+            </p>
+        </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-  {
-    features.map((item) => (
-      <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
-          <Icon class="text-white" name={item.icon} />
+        <div class="mt-10">
+            <dl class="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0">
+                {
+                    features.map((feature) => (
+                        <div class="relative">
+                            <dt>
+                                <div class="absolute flex h-12 w-12 items-center justify-center rounded-md text-white bg-gradient">
+                                    <Icon
+                                        class="h-6 w-6"
+                                        aria-hidden="true"
+                                        pack="heroicons-outline"
+                                        name={feature.icon}
+                                    />
+                                </div>
+                                <p class="ml-16 text-lg font-medium leading-6 text-gray-900 dark:text-gray-200">
+                                    {feature.name}
+                                </p>
+                            </dt>
+                            <dd class="ml-16 mt-2 text-base text-gray-600 dark:text-gray-400">
+                                {feature.description}
+                            </dd>
+                        </div>
+                    ))
+                }
+            </dl>
         </div>
-        <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
-        </div>
-      </div>
-    ))
-  }
+    </div>
 </div>

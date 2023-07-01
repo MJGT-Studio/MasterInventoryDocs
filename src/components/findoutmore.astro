@@ -1,0 +1,55 @@
+---
+import AstroSVG from '../assets/astro/astro-cover.png'
+import TailwindSVG from '../assets/svg/undraw/undraw_tailwind_css.svg'
+import HTMLSVG from '../assets/svg/undraw/undraw_static_assets.svg'
+import LinkButton from './buttonLink.astro'
+
+const callouts = [
+    {
+        name: 'Master Inventory - Theme Swap',
+        description: 'Theme Swap function',
+        imageSrc: 'https://img.youtube.com/vi/F4Vg33ro8pU/maxresdefault.jpg',
+        imageAlt: 'Astro logo',
+        href: 'https://www.youtube.com/watch?v=F4Vg33ro8pU'
+    },
+    {
+        name: 'Master Inventory - Attribute system',
+        description:
+            'Attribute system for Master Inventory',
+        imageSrc: 'https://img.youtube.com/vi/eNHuHR0dG0c/maxresdefault.jpg',
+        imageAlt: 'TailwindCSS drawing',
+        href: 'https://www.youtube.com/watch?v=eNHuHR0dG0c'
+    },
+    {
+        name: 'Master Inventory - Talent system',
+        description: 'Talent system for Master Inventory',
+        imageSrc: 'https://img.youtube.com/vi/GsixQA2m5Yw/maxresdefault.jpg',
+        imageAlt: 'Core Web',
+        href: 'https://www.youtube.com/watch?v=GsixQA2m5Yw&t=582s'
+    }
+]
+---
+
+<div class="bg-gradient-dark">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+            <h2 class="text-4xl font-extrabold text-white">
+                Lasted Tutorials
+            </h2>
+            <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+                {
+                    callouts.map((callout) => (
+                        <div class="bg-gradient-dark rounded-lg shadow-lg hover:transform hover:scale-110 transition-transform duration-300">
+                            <img src={callout.imageSrc} alt={callout.imageAlt} class="rounded-t-lg">
+                            <div class="p-6">
+                            <h2 class="font-bold mb-2 text-2xl text-white">{callout.name}</h2>
+                            <p class="text-white mb-2">{callout.description}</p>
+                            <LinkButton text="Read More 👉" href={callout.href} />
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </div>
+</div>
