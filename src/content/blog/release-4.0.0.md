@@ -2,6 +2,8 @@
 title: Release 4.0.0
 description: Master inventory next release 4.0.0 features.
 author: mario
+coverSVG: ../../assets/releases/releases.png
+socialImage: ../../assets/releases/releases.png
 publishDate: 2023-06-20T00:00:00.000Z
 categories:
   - release

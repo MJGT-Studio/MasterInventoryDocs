@@ -4,8 +4,8 @@ import Base from '../layouts/base.astro'
 import Map from '../components/map.astro'
 import PageHero from '../components/pagehero.astro'
 import { SiteMetadata } from '../config'
-import coverSVG from '../assets/svg/undraw/undraw_contact_us.svg'
-import socialImage from '../assets/undraw/undraw_contact_us.png'
+import coverSVG from '../assets/svg/contact/contact.png'
+import socialImage from '../assets/contact/contact.png'
 import { getCollection } from 'astro:content'
 
 const frontmatter = {
@@ -32,13 +32,13 @@ const social = await getCollection('social')
         <section class="mx-auto mb-20 max-w-7xl text-gray-800 dark:text-gray-100">
             <div class="block bg-white dark:bg-gray-900 lg:my-8">
                 <div class="flex flex-wrap items-start">
-                    <div
+                    <!-- <div
                         class="block w-full shrink-0 grow-0 basis-auto lg:flex lg:w-6/12 xl:w-4/12">
                         <div class="w-full">
                             <Map loc={SiteMetadata.latlng} zoom={11} />
                         </div>
-                    </div>
-                    <div class="w-full shrink-0 grow-0 basis-auto lg:w-6/12 xl:w-8/12">
+                    </div> -->
+                    <div class="w-full shrink-0 grow-0 basis-auto">
                         <div class="flex flex-wrap pt-8 lg:pt-0">
                             {
                                 social.map(

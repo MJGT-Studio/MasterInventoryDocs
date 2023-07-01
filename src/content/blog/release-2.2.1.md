@@ -2,6 +2,8 @@
 title: Release 2.2.1
 description: Master inventory next release 2.2.1 features.
 author: mario
+coverSVG: ../../assets/releases/releases.png
+socialImage: ../../assets/releases/releases.png
 publishDate: 2023-06-16T00:00:00.000Z
 categories:
   - release
