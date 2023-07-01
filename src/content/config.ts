@@ -1,40 +1,74 @@
-// 1. Import utilities from `astro:content`
-import { z, defineCollection } from 'astro:content';
+// 1. Import your utilities and schemas
+import { z, defineCollection, reference } from 'astro:content'
 
-// 2. Define your collection(s)
+// 2. Define your collections
 const blogCollection = defineCollection({
-  schema: z.object({
-    draft: z.boolean(),
-    title: z.string(),
-    snippet: z.string(),
-    image: z.object({
-      src: z.string(),
-      alt: z.string(),
-    }),
-    publishDate: z.string().transform(str => new Date(str)),
-    author: z.string().default('Astroship'),
-    category: z.string(),
-    tags: z.array(z.string()),
-  }),
-});
+  schema: ({ image }) =>
+    z.object({
+      draft: z.boolean().optional(),
+      title: z.string(),
+      description: z.string(),
+      author: reference('author').optional(),
+      publishDate: z.date(),
+      coverSVG: image().optional(),
+      coverImage: image().optional(),
+      socialImage: image().optional(),
+      images: z.array(image()).optional(),
+      gallery: z.string().optional(),
+      categories: z.array(reference('category')).optional(),
+      tags: z.array(z.string()).optional(),
+      extra: z.array(z.enum(['math', 'markmap', 'mermaid', 'gallery'])).optional(),
+      minutesRead: z.string().optional()
+    })
+})
 
-const teamCollection = defineCollection({
+const docCollection = defineCollection({
+  schema: ({ image }) =>
+    z.object({
+      draft: z.boolean().optional(),
+      section: z.string(),
+      weight: z.number().default(0),
+      title: z.string(),
+      description: z.string(),
+      images: z.array(image()).optional(),
+      gallery: z.string().optional()
+    })
+})
+
+const categoryCollection = defineCollection({
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      coverSVG: image(),
+      socialImage: image()
+    })
+})
+
+const authorCollection = defineCollection({
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      image: image(),
+      contact: z.string()
+    })
+})
+
+const socialCollection = defineCollection({
+  type: 'data',
   schema: z.object({
-    draft: z.boolean(),
     name: z.string(),
-    title: z.string(),
-    avatar: z.object({
-      src: z.string(),
-      alt: z.string(),
-    }),
-    publishDate: z.string().transform(str => new Date(str)),
-  }),
-});
+    link: z.string(),
+    icon: z.string()
+  })
+})
 
-// 3. Export a single `collections` object to register your collection(s)
-//    This key should match your collection directory name in "src/content"
+// 3. Export multiple collections to register them
 export const collections = {
-  'docs': blogCollection,
-  'releases': blogCollection,
-  'team': teamCollection,
-};
+  blog: blogCollection,
+  doc: docCollection,
+  category: categoryCollection,
+  author: authorCollection,
+  social: socialCollection
+}

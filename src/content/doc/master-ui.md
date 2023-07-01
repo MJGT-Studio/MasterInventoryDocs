@@ -1,0 +1,463 @@
+---
+section: System
+title: Master UI
+description: Widget Tutorial System Documentation
+---
+
+# The widget system
+
+Master UI comes with a widget system that allow you to create a widget for your game, the widget system is very simple to use and it is very easy to create a widget for your game, if you play the demo you will see that the widget system is already implemented in the demo, in this document we will all the available widgets and methods you can use to create your own widget.
+
+## Available Widgets
+
+- [Buttons](#Buttons)
+- [Icons](#Icons)
+- [Inputs](#Inputs)
+- [List](#List)
+- [Notifications](#Notifications)
+- [ProgressBar](#ProgressBar)
+- [Slots](#Slots)
+- [Spinner](#Spinner)
+- [Stats](#Stats)
+- [Title](#Title)
+
+## Buttons
+
+### WBP_Master_ButtonImg
+
+![Img1](/public/docs/masterUi/img1.png)
+
+#### Variables
+
+| Name | Type | Description |
+| --- | --- | --- |
+| Left click mouse can interact | Boolean | Used for the gamepad |
+| Clear Virtual Controller AfterAction | Boolean | Used for the gamepad |
+| Dark Version | Boolean | Dark version of the button |
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+| API_SetValue | Set the text of the button |
+
+#### Event Callbacks
+| Event Name | Description |
+| --- | --- |
+| OnButtonClicked | Called when the button is clicked |
+
+### WBP_Master_ButtonText
+
+![Img2](/public/docs/masterUi/img2.png)
+
+#### Variables
+
+| Name | Type | Description |
+| --- | --- | --- |
+| ButtonText | Text | Text of the button |
+| Left click mouse can interact | Boolean | Used for the gamepad |
+| Clear Virtual Controller AfterAction | Boolean | Used for the gamepad |
+| UseAnimation | Boolean | Use animation when the button is hover |
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+| API_SetValue | Set the text of the button |
+
+#### Event Callbacks
+| Event Name | Description |
+| --- | --- |
+| OnButtonClicked | Called when the button is clicked |
+
+### WBP_Master_ButtonTextWithIcon
+
+![Img3](/public/docs/masterUi/img3.png)
+
+#### Variables
+
+| Name | Type | Description |
+| --- | --- | --- |
+| ButtonText | Text | Text of the button |
+| ButtonIcon | Texture2D | Icon of the button |
+| ButtonColor | Liner Color | Color of the button |
+| Left click mouse can interact | Boolean | Used for the gamepad |
+| Clear Virtual Controller AfterAction | Boolean | Used for the gamepad |
+| UseHoverAnimation | Boolean | Use animation when the button is hover |
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+| API_SetValue | Set the text of the button |
+
+#### Event Callbacks
+| Event Name | Description |
+| --- | --- |
+| OnButtonClicked | Called when the button is clicked |
+
+## Icons
+
+### WBP_Master_IconBoxDisplay
+
+![Img4](/public/docs/masterUi/img4.png)
+
+#### Variables
+
+| Name | Type | Description |
+| --- | --- | --- |
+| IconVaraible | Texture2D | Icon of the button |
+| HideIconBorder | Boolean | Hide the border of the icon |
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+| API_SetValue | Set the icon of the button |
+
+## Inputs
+
+### WBP_ExpandableArea
+
+You can use this widget to create a expandable area, you can use this widget to create a settings menu for example.
+
+![Img5](/public/docs/masterUi/img5.png)
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+| API_PlayAniamtion | Start the flashing animation |
+| API_StopAnimation | Stop the flashing animation |
+
+### WBP_Master_InputText
+
+![Img6](/public/docs/masterUi/img6.png)
+
+#### Variables
+
+| Name | Type | Description |
+| --- | --- | --- |
+| DisableValidationMessage | Boolean | Disable the validation message |
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+| API_DIsplayValidationError | Display the validation error |
+
+#### Event Callbacks
+
+| Event Name | Description |
+| --- | --- |
+| OnTextChange | Called when the text change |
+
+### WBP_Master_ComboBox
+
+![Img7](/public/docs/masterUi/img7.png)
+
+#### Variables
+
+| Name | Type | Description |
+| --- | --- | --- |
+| DisableValidationMessage | Boolean | Disable the validation message |
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+| API_DIsplayValidationError | Display the validation error |
+
+#### Event Callbacks
+
+| Event Name | Description |
+| --- | --- |
+| OnSelectionChange | Called when the selection change |
+
+## List
+
+### WBP_Master_ComplexList
+
+![Img8](/public/docs/masterUi/img8.png)
+
+#### Variables
+
+| Name | Type | Description |
+| --- | --- | --- |
+| OnMouseHover | Boolean | Called when the mouse is hover |
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+| API_SetSlot01 | Set the slot 01 |
+| API_SetSlot02 | Set the slot 02 |
+
+#### Event Callbacks
+| Event Name | Description |
+| --- | --- |
+| OnButtonClicked | Called when the button is clicked |
+
+### WBP_Master_SimpleList
+
+![Img9](/public/docs/masterUi/img9.png)
+
+#### Variables
+
+| Name | Type | Description |
+| --- | --- | --- |
+| MouseHover | Boolean | Called when the mouse is hover |
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+| API_SetSlot01 | Set the slot 01 |
+
+#### Event Callbacks
+| Event Name | Description |
+| --- | --- |
+| OnButtonClicked | Called when the button is clicked |
+
+
+## Notifications
+
+### WBP_LogMessage
+
+![img10](/public/docs/masterUi/img10.png)
+
+#### Variables
+
+| Name | Type | Description |
+| --- | --- | --- |
+| Message | Text | Message of the notification |
+| TextColor | Color | Color of the text |
+| DestoryTime | Float | Time before the notification is destroyed |
+| OverhideIcon | Texture2D | Icon of the notification |
+
+## ProgressBar
+
+### WBP_Master_Circular
+
+![Img11](/public/docs/masterUi/img11.png)
+
+#### Variables
+
+| Name | Type | Description |
+| --- | --- | --- |
+| BarColor | Color | Color of the bar |
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+| API_SetPercentage | Set the percentage of the bar |
+| API_ChangeBarColor | Change the color of the bar |
+
+#### Event Callbacks
+| Event Name | Description |
+| --- | --- |
+| ProgressFinish | Called when the progress finish |
+
+### WBP_Master_ProgressBar
+
+![img12](/public/docs/masterUi/img12.png)
+
+#### Variables
+
+| Name | Type | Description |
+| --- | --- | --- |
+| CooldownTimer | Float | Time before the cooldown is finish |
+| ProgressBarImg | Texture2D | Image of the progress bar |
+| ToogleBarTextDisplay | Boolean | Display the text of the progress bar |
+| UseTimer | Boolean | Use the timer |
+| BarColor | Color | Color of the bar |
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+| StartTimer | Start the timer |
+| ProgressEnd | Called when the progress finish |
+| API_toogleBarTextDisplay | Toogle the text display |
+| API_toogleTimerUsage | Toogle the timer usage |
+| API_ChangeBarColor | Change the color of the bar |
+
+#### Event Callbacks
+| Event Name | Description |
+| --- | --- |
+| ProgressFinish | Called when the progress finish |
+
+## Slots
+
+### WBP_BaseItemSlot
+
+![Img13](/public/docs/masterUi/img13.png)
+
+#### Variables
+
+| Name | Type | Description |
+| --- | --- | --- |
+|ShowQty | If true the quantity box will be shown|
+|ShowIndex | If true the index box will be shown|
+|ShowSelected | If true the slot selected will be shown|
+|ShowIcon | If true the icon will be shown|
+|UseDefaultIconOnStart | If true the default icon will be used on start|
+|ShowIconBorder | If true the icon border will be shown|
+|UseIconOverlay | If true the icon overlay will be shown|
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+|API_ToogleQtyBox | Toogle the quantity box|
+|API_ToogleIndexBox | Toogle the index box|
+|API_ToogleSlotSelected | Toogle the slot selected|
+|API_ToogleIcon | Toogle the icon|
+|API_ToogleIconBorder | Toogle the icon border|
+|API_ToogleIconOverlay | Toogle the icon overlay|
+|API_ChangeQtyValue | Change the quantity value|
+|API_ChangeIndexValue | Change the index value|
+|API_ChangeIcon | Change the icon|
+|API_ChangeBorder | Change the border|
+|API_ChangeOverloadIcon | Change the overload icon|
+|API_StartCooldown | Start the cooldown|
+|API_ClearCooldown | Clear the cooldown|
+
+#### Event Callbacks
+| Event Name | Description |
+| --- | --- |
+| CooldownStart | Called when the cooldown start |
+| CooldownFinish | Called when the cooldown finish |
+
+## Spinner
+
+### WBP_Spinner
+
+![Img14](/public/docs/masterUi/img14.png)
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+| API_SetValue | Set the value of the spinner |
+
+## Stats
+
+### WBP_DefaulPlayerStats
+
+![Img15](/public/docs/masterUi/img15.png)
+
+#### Variables
+
+| Name | Type | Description |
+| --- | --- | --- |
+| MaxStats | Float | Max stats of the bar |
+| TargetStatsValue | Float | Target stats value of the bar |
+| CurrentValue | Float | Current value of the bar |
+| WIthOverhide | Float | With overhide of the bar |
+| HeightOverhide | Float | Height overhide of the bar |
+| OverhideSize | Boolean | Overhide size of the bar |
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+|API_UpdateStats | Update the stats of the bar|
+|SnapBarValue | Still will be use internally to update and set the bar value|
+|StartSmoothBar | This method will be use internally to start the smooth bar animation|
+|StopSmoothBar | This method will be use internally to stop the smooth bar animation|
+
+#### Event Callbacks
+| Event Name | Description |
+| --- | --- |
+| ProgressFinish | Called when the progress finish |
+
+### WBP_DefaulPlayerStatsCircular
+
+![Img16](/public/docs/masterUi/img16.png)
+
+#### Variables
+
+| Name | Type | Description |
+| --- | --- | --- |
+| MaxStats | Float | Max stats of the bar |
+| TargetStatsValue | Float | Target stats value of the bar |
+| CurrentValue | Float | Current value of the bar |
+| WIthOverhide | Float | With overhide of the bar |
+| HeightOverhide | Float | Height overhide of the bar |
+| OverhideSize | Boolean | Overhide size of the bar |
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+|API_UpdateStats | Update the stats of the bar|
+|SnapBarValue | Still will be use internally to update and set the bar value|
+|StartSmoothBar | This method will be use internally to start the smooth bar animation|
+|StopSmoothBar | This method will be use internally to stop the smooth bar animation|
+
+#### Event Callbacks
+| Event Name | Description |
+| --- | --- |
+| ProgressFinish | Called when the progress finish |
+
+## Title
+
+### WBP_AnimatedNumberText
+
+![Img17](/public/docs/masterUi/img17.png)
+
+#### Variables
+
+| Name | Type | Description |
+| --- | --- | --- |
+| Color | Color | Color of the text |
+| StartBarSmooth | Boolean | Start the bar smooth |
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+|API_ChangeValue | Change the value of the text|
+
+#### Event Callbacks
+| Event Name | Description |
+| --- | --- |
+| ProgressFinish | Called when the progress finish |
+
+### WBP_Master_Title
+
+![Img18](/public/docs/masterUi/img18.png)
+
+#### Variables
+
+| Name | Type | Description |
+| --- | --- | --- |
+| TitleText | Text | Text of the title |
+| TitleColor | Color | Color of the title |
+| UseTitleBorder | Float | Size of the title |
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+|API_SetValue | Set the value of the title|
+
+### WBP_Master_TitleWithIcon
+
+![Img19](/public/docs/masterUi/img19.png)
+
+#### Variables
+
+| Name | Type | Description |
+| --- | --- | --- |
+| TitleText | Text | Text of the title |
+| TitleColor | Color | Color of the title |
+| UseTitleBorder | Float | Size of the title |
+
+#### Methods
+
+| Name | Description |
+| --- | --- |
+|API_SetValue | Set the value of the title|

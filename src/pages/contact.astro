@@ -1,45 +1,80 @@
 ---
-import { Icon } from "astro-icon";
-import Layout from "@layouts/Layout.astro";
-import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
-import Button from "@components/ui/button.astro";
-import Contactform from "@components/contactform.astro";
+import { Icon } from 'astro-icon'
+import Base from '../layouts/base.astro'
+import Map from '../components/map.astro'
+import PageHero from '../components/pagehero.astro'
+import { SiteMetadata } from '../config'
+import coverSVG from '../assets/svg/undraw/undraw_contact_us.svg'
+import socialImage from '../assets/undraw/undraw_contact_us.png'
+import { getCollection } from 'astro:content'
+
+const frontmatter = {
+    title: 'Contact',
+    description: 'Join the conversation on social media or send us an email.',
+    coverSVG: coverSVG,
+    socialImage: socialImage,
+    publishDate: SiteMetadata.buildTime
+}
+
+const social = await getCollection('social')
 ---
 
-<Layout title="Contact">
-  <Container>
-    <Sectionhead>
-      <Fragment slot="title">Contact</Fragment>
-      <Fragment slot="desc">We are a here to help.</Fragment>
-    </Sectionhead>
-
-    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
-      <div>
-        <h2 class="font-medium text-2xl text-gray-800">Contact Astroship</h2>
-        <p class="text-lg leading-relaxed text-slate-500 mt-3">
-          Have something to say? We are here to help. Fill up the form or send
-          email or call phone.
-        </p>
-        <div class="mt-5">
-          <div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
-            <span>1734 Sanfransico, CA 93063</span>
-          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a
-              href="mailto:hello@astroshipstarter.com"
-              >hello@astroshipstarter.com</a
-            >
-          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:phone" /><a
-              href="tel:+1 (987) 4587 899">+1 (987) 4587 899</a
-            >
-          </div>
-        </div>
-      </div>
-      <div>
-        <Contactform />
-      </div>
-    </div>
-  </Container>
-</Layout>
+<Base frontmatter={frontmatter}>
+    <header>
+        <PageHero
+            title={frontmatter.title}
+            description={frontmatter.description}
+            coverSVG={coverSVG}
+            socialImage={socialImage}
+        />
+    </header>
+    <main>
+        <section class="mx-auto mb-20 max-w-7xl text-gray-800 dark:text-gray-100">
+            <div class="block bg-white dark:bg-gray-900 lg:my-8">
+                <div class="flex flex-wrap items-start">
+                    <div
+                        class="block w-full shrink-0 grow-0 basis-auto lg:flex lg:w-6/12 xl:w-4/12">
+                        <div class="w-full">
+                            <Map loc={SiteMetadata.latlng} zoom={11} />
+                        </div>
+                    </div>
+                    <div class="w-full shrink-0 grow-0 basis-auto lg:w-6/12 xl:w-8/12">
+                        <div class="flex flex-wrap pt-8 lg:pt-0">
+                            {
+                                social.map(
+                                    (method) =>
+                                        method.data.link && (
+                                            <div class="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:w-6/12 xl:px-12">
+                                                <div class="flex items-start">
+                                                    <div class="shrink-0">
+                                                        <Icon
+                                                            pack="bi"
+                                                            name={method.data.icon}
+                                                            class="flex h-14 w-14 items-center justify-center rounded-md bg-purple-600 p-4 text-white shadow-md"
+                                                        />
+                                                    </div>
+                                                    <div class="ml-6 grow">
+                                                        <p class="mb-1 font-bold">
+                                                            {method.data.name}
+                                                        </p>
+                                                        <p>
+                                                            {' '}
+                                                            <a
+                                                                href={method.data.link}
+                                                                class="text-purple-600 hover:text-pink-600 dark:text-purple-300 dark:hover:text-pink-300">
+                                                                {method.data.link}
+                                                            </a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        )
+                                )
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</Base>
