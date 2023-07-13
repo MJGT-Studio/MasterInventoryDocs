@@ -65,5 +65,6 @@ export const SIDEBAR: Sidebar = {
     { text: 'Attribute System', link: 'doc/attribute-system' },
     { text: 'Talent System', link: 'doc/talent-system' },
   ],
-  'Master UI': [{ text: 'master-ui', link: 'doc/master-ui' }]
+  'Master UI': [{ text: 'master-ui', link: 'doc/master-ui' }],
+  'Master HTTP Request': [{ text: 'master-http', link: 'doc/master-http' }]
 }
