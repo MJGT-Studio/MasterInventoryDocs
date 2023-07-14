@@ -89,6 +89,20 @@ const { frontmatter } = Astro.props
     <slot name="in-head" />
 
     </head>
+
+    <script
+    type="text/partytown"
+    src="https://www.googletagmanager.com/gtag/js?id=G-RFHKRN6KYD">
+    </script>
+    <script type="text/partytown">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-RFHKRN6KYD");
+    </script>
+
     <body class="dark:bg-gray-900">
       {frontmatter.extra?.includes('mermaid') &&
         <script type="module">
