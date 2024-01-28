@@ -23,7 +23,7 @@ jobs:
       - name: Set up Node.js and pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: '18'
+          version: '8.15.0'
       - name: Install dependencies and build your site
         run: |
           pnpm install
