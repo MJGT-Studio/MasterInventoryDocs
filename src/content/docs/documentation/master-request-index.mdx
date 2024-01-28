@@ -1,0 +1,98 @@
+---
+section: System
+title: Master UI
+description: Widget Tutorial System Documentation
+---
+
+# The Widget System
+
+Master Http Request Unreal Engine 5 plugin is designed to simplify HTTP requests within your Unreal Engine projects.
+
+## Available Blueprints
+
+- [Master Request](#master-request)
+- [Master Request With Payload And Headers](#master-request-with-payload-and-headers)
+- [Master Request Async](#master-request-async)
+- [Decode Json](#decode-json)
+- [Decode Nested Json](#decode-nested-json)
+
+# Master Request
+
+![Master Request](/masterHttp/MasterRequest.png)
+
+#### Inputs
+
+| Name        | Type   | Description                 |
+| ----------- | ------ | --------------------------- |
+| url         | String | The URL of the request      |
+| Http Method | String | The method of the request   |
+
+# Master Request With Payload And Headers
+
+![Master Request With Payload And Headers](/masterHttp/MasterRequestHeaderBody.png)
+
+#### Inputs
+
+| Name         | Type             | Description                           |
+| ------------ | ---------------- | ------------------------------------- |
+| url          | String           | The URL of the request                |
+| Http Method  | String           | The method of the request             |
+| Body Payload | Array of structs | The body payload of the request        |
+| Headers      | Array of structs | The headers of the request             |
+
+# Master Request With Payload And Headers Async
+
+This node is the same as the previous one, but it is async, so it will not block the main thread, executing the response in an event.
+
+![Master Request With Payload And Headers Async](/masterHttp/MasterRequestHeaderBodyAsync.png)
+
+#### Inputs
+
+| Name         | Type             | Description                           |
+| ------------ | ---------------- | ------------------------------------- |
+| url          | String           | The URL of the request                |
+| Http Method  | String           | The method of the request             |
+| Body Payload | Array of structs | The body payload of the request        |
+| Headers      | Array of structs | The headers of the request             |
+
+# Decode Json
+
+Sometimes you need to grab a value from a JSON. This node will help you do that. It's very simple; you just need the JSON string and the key of the value that you want to grab.
+
+#### Inputs
+
+| Name        | Type   | Description          |
+| ----------- | ------ | -------------------- |
+| Json String | String | The JSON string      |
+| Key         | String | The key of the value  |
+
+#### Outputs
+
+| Name    | Type    | Description                    |
+| ------- | ------- | ------------------------------ |
+| success | Boolean | If the JSON was decoded successfully |
+| value   | String  | The value of the key            |
+
+![Decode Json](/masterHttp/jsonDecodeNested.png)
+
+# Decode Nested Json
+
+Sometimes you have complex JSONs. This node will help you grab a value from a nested JSON. It's very simple; you just need the JSON string and the key of the value that you want to grab.
+
+#### Inputs
+
+| Name        | Type             | Description          |
+| ----------- | ---------------- | -------------------- |
+| Json String | String           | The JSON string      |
+| Key         | String           | The key of the value  |
+
+#### Outputs
+
+| Name               | Type             | Description                 |
+| ------------------ | ---------------- | --------------------------- |
+| success            | Boolean          | If the JSON was decoded successfully |
+| Array Of Nested Json | Array of structs | The value of the key          |
+
+# Usage Example
+
+![Usage Example](/masterHttp/ExampleRequest.png)

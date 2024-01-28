@@ -1,0 +1,139 @@
+---
+title: Master Inventory Get Started
+description: Get Started with Master Inventory
+---
+
+# Master Inventory
+
+Thanks for purchasing Master Inventory follow this docs to learn how easy is to implement in you game.
+
+## Requirements
+
+- **Unreal engine 5.3 or above**
+- **Awesome game 😎.**
+
+<div class="grid gap-4 mt-6">
+
+# (01) Installation
+
+First you need to (migrate) the <strong>Master Inventory</strong> asset to your existing project, to do that follow the next steps.
+
+<div class='flex flex-row bg-gray-900 h-10 w-full rounded-[30px]'>
+	<span class='flex flex-col justify-center text-white font-bold grow-[1] max-w-[90%] text-center'>Important:</span>
+	<div class='w-[10%] bg-red-400 rounded-r-2xl shadow-[0_0_20px_#d00000]'></div>
+</div>
+> Before migrating your assets, please ensure that you have backed up your project.
+> While the integration has been designed to interfere as little as possible with your project,
+> it is always advisable to have a backup as a precautionary measure.
+
+<Callout icon="⚠️" type="info">
+    Migrating your asset from one project to another.
+</Callout>
+
+###  1.  Locate the <strong>MasterRpgFramework</strong> asset folder in the content browser of the project.
+![Img1](/getStarted/01.png)
+
+### 2.  Right click on the <strong>MasterRpgFramework</strong> folder and select <strong>Migrate</strong> from the context menu.
+![Img2](/getStarted/02.png)
+
+### 3.  In the context menu select <strong>MasterRpgFramework</strong> and press <strong>OK</strong>.
+![Img3](/getStarted/03.png)
+
+### 4.  Select the destination project and press <strong>Select Folder</strong>, make you sure you select the <strong>Content</strong> folder.
+![Img4](/getStarted/04.png)
+
+<Callout icon="😎" type="success">
+    Ay thats it, now you have the <strong>MasterRpgFramework</strong> in your project, now lets set the configuration required.
+</Callout>
+
+
+# (02) Project integration (Controller Events Setup)
+
+Now you need to add the `BPC_MasterInventory` component to your player controller, to do that follow the next steps.
+
+<div class='flex flex-row bg-gray-900 h-10 w-full rounded-[30px]'>
+	<span class='flex flex-col justify-center text-white font-bold grow-[1] max-w-[90%] text-center'>Important:</span>
+	<div class='w-[10%] bg-red-400 rounded-r-2xl shadow-[0_0_20px_#d00000]'></div>
+</div>
+> i am assuming you already have a player controller for you game, if not please create one and attach it to your game mode.
+
+### 5.  Now open your player controller and add the `BPC_MasterInventory` component.
+![Img5](/getStarted/05.png)
+
+### 6.  Now your controller should look like this.
+![Img6](/getStarted/06.png)
+
+<Callout icon="👌" type="info">
+    Next we need to transfer the example events from the `BP_MasterInventoryController` to your controller, to do that follow the next steps.
+</Callout>
+
+### 7.  Find and open the `BP_MasterInventoryController` in the content browser.
+![Img7](/getStarted/07.png)
+
+### 8.  Next copy the events from the `BP_MasterInventoryController` to your controller.
+> Best tip here is to copy from botton to top so the engine don't get confused with the references, there is not need to copy all the events, but if you don't you may miss some functionality.
+
+<Callout icon="👌" type="info">
+    The pivotal event is 'StartMasterInventory.' This event initiates and assigns all inputs to the player pawn.
+</Callout>
+
+![Img8](/getStarted/08.png)
+
+# (03) Controller inteface implementation
+
+<div class='flex flex-row bg-gray-900 h-10 w-full rounded-[30px]'>
+	<span class='flex flex-col justify-center text-white font-bold grow-[1] max-w-[90%] text-center'>Important:</span>
+	<div class='w-[10%] bg-red-400 rounded-r-2xl shadow-[0_0_20px_#d00000]'></div>
+</div>
+> Now is recomented to have a reference to the player pawn in your player controller, in this way we can acess the spawn point. camera and some other functionality that we goin to use in the interface implementation.
+
+### 9. Now you need to add the `BPI_ActorInventory` interface to your player controller.
+
+![Img9](/getStarted/09.png)
+
+### 10. Now you need to implement 3 main interface events, `i_ReturnPlayetActorRef`, `i_ReturnSpawnPoint` and `I_ReturnInventoryReference`.
+
+#### 1: First lets implement the `i_ReturnSpawnPoint` event, this will tell master inventory where to spawn the items when droped.
+
+![Img11](/getStarted/11.png)
+
+#### 2: Now lets implement the `I_ReturnInventoryReference` event, this will return the inventory reference to the master inventory so we can access in external blueprints.
+
+![Img12](/getStarted/12.png)
+
+#### 3: Now lets implement the `i_ReturnPlayetActorRef` event, this will return the player reference to the master inventory so we can also access in external blueprints and internal.
+
+![Img13](/getStarted/13.png)
+
+<Callout icon="😍" type="success">
+    At this point you have the master inventory integrated in your project controller, now lets test it if some feature is not working please check the demo controller and compare with yours.
+</Callout>
+
+# (04) Player pawn implementation
+> Master Inventory also comes with a Guidance system and a cinematic manager to proper implement follow this steps.
+
+### 12. Open your player pawn and add lets add the `BPI_CinematicInterface` interface to your player pawn.
+
+![Img14](/getStarted/14.png)
+
+### 13. Now we need to setup the guidance system, you need to add the `BPC_MasterGuidance` component to your player pawn.
+
+![Img15](/getStarted/15.png)
+
+### 14. Now call the start event in the `BeginPlay` event.
+![Img16](/getStarted/16.png)
+
+### 15. Now you need to call the event when the player turn or move to update the guidance system.
+![Img17](/getStarted/17.png)
+
+<Callout icon="🫡" type="info">
+    IF you need more information check the demo player pawn.
+</Callout>
+
+### Congratulations you have successfully steaup the master inventory
+
+## Information links
+[tutorial-setup](https://youtu.be/87jMTX83RpI)
+[Asset-Link](https://www.unrealengine.com/marketplace/en-US/product/b5c3ee6da047491a958b499c7f027713)
+
+</div>

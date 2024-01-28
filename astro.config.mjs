@@ -1,41 +1,26 @@
-import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
-import sitemap from '@astrojs/sitemap';
-import mdx from '@astrojs/mdx';
-import alpinejs from '@astrojs/alpinejs';
-import robotsTxt from 'astro-robots-txt';
-import remarkMath from 'remark-math';
-import remarkEmoji from 'remark-emoji';
-import rehypeKatex from 'rehype-katex';
-import remarkPlantUML from '@akebifiky/remark-simple-plantuml';
-import { remarkReadingTime } from './remark-plugins/remark-reading-time.mjs';
-import { remarkDiagram } from './remark-plugins/remark-diagram.mjs';
-
-import markdoc from "@astrojs/markdoc";
+import mdx from "@astrojs/mdx";
+import react from "@astrojs/react";
+import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
+import { defineConfig } from "astro/config";
+import vercel from '@astrojs/vercel/static';
 
 // https://astro.build/config
 export default defineConfig({
-  vite: {
-    ssr: {
-      external: ['svgo'],
-      noExternal: ['swiper', 'leaflet']
-    }
-  },
-  site: "https://mjgt-studios.github.io",
-  base: '/MasterInventoryDocs',
-  integrations: [tailwind(), sitemap(), mdx(), alpinejs(), robotsTxt(), markdoc()],
-  experimental: {
-    assets: true
-  },
-  markdown: {
-    extendDefaultPlugins: true,
-    remarkPlugins: [remarkReadingTime, remarkMath, remarkPlantUML, remarkDiagram, remarkEmoji],
-    rehypePlugins: [rehypeKatex],
-    shikiConfig: {
-      theme: 'github-light',
-      langs: [],
-      // Enable word wrap to prevent horizontal scrolling
-      wrap: true
-    }
-  }
+  site: "https://astro-nomy.vercel.app",
+  integrations: [
+    mdx({
+      syntaxHighlight: 'shiki',
+      shikiConfig: { theme: 'github-dark-dimmed' },
+      gfm: true,
+    }),
+    sitemap(),
+    react(),
+    tailwind({
+      applyBaseStyles: false,
+    }),
+  ],
+  adapter: vercel({
+    analytics: true,
+  }),
 });
