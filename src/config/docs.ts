@@ -26,7 +26,7 @@ export const docsConfig: DocsConfig = {
       items: [
         {
           title: "Introduction 🫡 (docs)",
-          href: "/docs/documentation/master-inventory-index",
+          href: "/MasterInventoryDocs/docs/documentation/master-inventory-index",
         },
         {
             title: "Get Started 🚀 (video)",
@@ -63,7 +63,7 @@ export const docsConfig: DocsConfig = {
       items: [
         {
           title: "Introduction 🫡 (docs)",
-          href: "/docs/documentation/master-ui-index",
+          href: "/MasterInventoryDocs/docs/documentation/master-ui-index",
         }
       ],
     },
@@ -72,7 +72,7 @@ export const docsConfig: DocsConfig = {
       items: [
         {
           title: "Get started 🚀 (docs)",
-          href: "/docs/documentation/master-request-index",
+          href: "/MasterInventoryDocs/docs/documentation/master-request-index",
           disabled: false,
         }
       ],

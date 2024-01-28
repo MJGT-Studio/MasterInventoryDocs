@@ -31,12 +31,12 @@ export const navMenuConfig: NavMenuConfig = {
       items: [
         {
           title: "Blog",
-          href: "/blog",
+          href: "/MasterInventoryDocs/blog",
           description: "Checkout our blog posts.",
         },
         {
           title: "Docs",
-          href: "/docs/documentation/master-inventory-index",
+          href: "/MasterInventoryDocs/docs/documentation/master-inventory-index",
           description:
             "A Markdown/MDX documentation site built using Content Collections.",
         }
@@ -46,11 +46,11 @@ export const navMenuConfig: NavMenuConfig = {
   links: [
     {
       title: "FAQ",
-      href: "/faq",
+      href: "/MasterInventoryDocs/faq",
     },
     {
       title: "About",
-      href: "/about",
+      href: "/MasterInventoryDocs/about",
     },
   ],
 };

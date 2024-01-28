@@ -75,7 +75,7 @@
 @layer base {
   @font-face {
     font-family: 'CalSans Semibold';
-    src: url('/fonts/calsans-semibold.woff2') format('woff2');
+    src: url('/MasterInventoryDocs/fonts/calsans-semibold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -131,7 +131,7 @@
   .callout > * {
     @apply my-0 !important;
   }
-  
+
   .font-icon-callout {
     font-family: Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   }
