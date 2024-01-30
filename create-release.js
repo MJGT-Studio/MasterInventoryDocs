@@ -27,4 +27,4 @@ execSync(`git add ${filePath}`);
 execSync(`git commit -m "Add release notes for version ${releaseVersion}"`);
 
 // Push the changes to the new branch
-execSync(`git push origin ${branchName}`);
+execSync(`git push origin main`);
