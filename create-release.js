@@ -3,6 +3,7 @@ import { dirname } from 'path';
 import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
+import fetch from 'node-fetch';
 
 const currentFilePath = fileURLToPath(import.meta.url);
 const currentDir = dirname(currentFilePath);
