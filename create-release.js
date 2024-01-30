@@ -16,6 +16,7 @@ execSync(`git checkout -b ${branchName}`);
 
 // Fetch release notes using GitHub API
 const octokit = new Octokit();
+
 const { data: releases } = await octokit.repos.listReleases({
   owner: 'MJGT-Studio',
   repo: 'MasterInventoryDocs',
