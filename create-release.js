@@ -8,6 +8,10 @@ const currentFilePath = fileURLToPath(import.meta.url);
 const currentDir = dirname(currentFilePath);
 
 const releaseVersion = process.env.GITHUB_REF.split('/').pop();
+const branchName = `release-${releaseVersion}`;
+
+// Create and switch to a new branch
+execSync(`git checkout -b ${branchName}`);
 
 const releaseInfo = `
 # Release ${releaseVersion}
@@ -27,4 +31,4 @@ execSync(`git add ${filePath}`);
 execSync(`git commit -m "Add release notes for version ${releaseVersion}"`);
 
 // Push the changes to the new branch
-execSync(`git push origin main`);
+execSync(`git push origin ${branchName}`);
