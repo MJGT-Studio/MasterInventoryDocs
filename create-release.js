@@ -25,4 +25,6 @@ execSync('git config user.name "Mario Tarosso"');
 
 execSync(`git add ${filePath}`);
 execSync(`git commit -m "Add release notes for version ${releaseVersion}"`);
-execSync('git push');
+
+// Push the changes to the new branch
+execSync(`git push origin ${branchName}`);
