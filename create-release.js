@@ -10,7 +10,7 @@ const releaseInfo = `
 Add your release notes here.
 `;
 
-const filePath = path.join(__dirname, 'path/to/your/folder', `release-${releaseVersion}.md`);
+const filePath = path.join(__dirname, 'src/content/blog', `release-${releaseVersion}.md`);
 
 fs.writeFileSync(filePath, releaseInfo.trim());
 
