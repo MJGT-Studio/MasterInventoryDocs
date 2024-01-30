@@ -19,6 +19,10 @@ const filePath = path.join(currentDir, 'src/content/blog', `release-${releaseVer
 
 fs.writeFileSync(filePath, releaseInfo.trim());
 
+// Set Git user information
+execSync('git config user.email "mariojgt2@gmail.com"');
+execSync('git config user.name "Mario Tarosso"');
+
 execSync(`git add ${filePath}`);
 execSync(`git commit -m "Add release notes for version ${releaseVersion}"`);
 execSync('git push');
