@@ -3,7 +3,6 @@ import { dirname } from 'path';
 import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
-import { Octokit } from '@octokit/rest';
 
 const currentFilePath = fileURLToPath(import.meta.url);
 const currentDir = dirname(currentFilePath);
@@ -15,13 +14,16 @@ const branchName = 'main'; // Specify the main branch name
 execSync(`git checkout -b ${branchName}`);
 
 // Fetch release notes using GitHub API
-const octokit = new Octokit();
+const owner = 'MJGT-Studio';
+const repo = 'MasterInventoryDocs';
 
-const { data: releases } = await octokit.repos.listReleases({
-  owner: 'MJGT-Studio',
-  repo: 'MasterInventoryDocs',
-});
+const releasesResponse = await fetch(`https://api.github.com/repos/${owner}/${repo}/releases`);
+if (!releasesResponse.ok) {
+  console.error(`Failed to fetch releases. Status: ${releasesResponse.status}`);
+  process.exit(1);
+}
 
+const releases = await releasesResponse.json();
 const release = releases.find((r) => r.tag_name === releaseVersion);
 
 if (!release) {
