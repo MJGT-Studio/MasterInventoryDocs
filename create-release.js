@@ -39,7 +39,7 @@ const releaseInfo = `---
 title: 'Release ${releaseVersion}'
 description: '${releaseNotes}'
 pubDate: '${today}'
-coverImage: '/path/to/your/cover/image.jpg'
+coverImage: '/MasterInventoryDocs/Newrelease.png'
 category: 'design'
 ---
 
