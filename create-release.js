@@ -8,7 +8,7 @@ const currentFilePath = fileURLToPath(import.meta.url);
 const currentDir = dirname(currentFilePath);
 
 const releaseVersion = process.env.GITHUB_REF.split('/').pop();
-const branchName = `release-${releaseVersion}`;
+const branchName = 'main'; // Specify the main branch name
 
 // Create and switch to a new branch
 execSync(`git checkout -b ${branchName}`);
