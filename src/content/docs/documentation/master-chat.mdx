@@ -1,0 +1,86 @@
+---
+section: System
+title: Master Chat
+description: Master Chat blueprints system.
+---
+
+# Master Chat
+
+Thanks for purchasing Master Chat follow this docs to learn how easy is to implement in you game.
+
+## Requirements
+
+- **Unreal engine 5.3 or above**
+- **Awesome game 😎.**
+
+## Use Case
+
+- **Survival games**
+- **FPS games**
+- **RPG games**
+
+## Limitations ❌
+
+- **This system performace was not tested in large scale games (MMO)**
+
+# Installation
+
+# 1 - Open your Master Chat project and migrate 😉
+
+![Img1](/MasterInventoryDocs/masterChat/1.png)
+
+![Img2](/MasterInventoryDocs/masterChat/2.png)
+
+Now find your own project and migrate the Master Chat folder to your project.
+
+![Img3](/MasterInventoryDocs/masterChat/3.png)
+
+# 2 - Setup your project gamemode 😎
+
+Find your `GameMode` override
+
+![Img4](/MasterInventoryDocs/masterChat/4.png)
+
+Make sure you have your your `PlayerController` added inside your `GameMode`
+
+![Img5](/MasterInventoryDocs/masterChat/5.png)
+
+# 3 - Player Controller setup 🎮
+
+For your `PlayerController` you need to add the `BPC_ChatController` component to the viewport.
+
+![Img6](/MasterInventoryDocs/masterChat/6.png)
+
+Now in your `BeginPlay` call the event `API_Boot` This must before everything else.
+
+![Img7](/MasterInventoryDocs/masterChat/7.png)
+
+Now you need to add the interface `BPI_ChatController` to the `PlayerController`
+
+![Img8](/MasterInventoryDocs/masterChat/8.png)
+
+Now you need to add the interface event `I_Handle_CMD` to the `PlayerController` this will be used to handle the chat commands.
+
+![Img9](/MasterInventoryDocs/masterChat/9.png)
+
+# 4 - Lets setup the gamemode class 🤓
+
+Open your `GameMode` class in full blueprint editor
+
+![Img11](/MasterInventoryDocs/masterChat/11.png)
+
+Now you need to add the component `BPC_ChatGameInstance` to the `GameMode` class.
+
+![Img12](/MasterInventoryDocs/masterChat/12.png)
+
+Now you need to add the interface `BPI_ChatGameInstance` to the `GameMode`
+
+![Img13](/MasterInventoryDocs/masterChat/13.png)
+
+Now you need to add the interface event `I_ReturnChageGameInstanceComponent` to the `GameMode`
+
+![Img14](/MasterInventoryDocs/masterChat/14.png)
+
+# 5 - Mission accomplish 🫡
+
+![Img16](/MasterInventoryDocs/masterChat/16.png)

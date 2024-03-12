@@ -16,9 +16,76 @@ const { title, description, bodyClass } = Astro.props;
 <html lang="en">
   <head>
     <BaseHead title={title} description={description} />
+
+    <style>
+        /* Add some basic styling for the modal */
+        .modal {
+          display: none;
+          position: fixed;
+          z-index: 9999;
+          padding: 20px;
+          @apply bg-slate-900 rounded-lg;
+          max-width: 80%;
+          max-height: 80%;
+          overflow: auto;
+          margin: auto;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+
+        img {
+          cursor: pointer;
+        }
+      </style>
+
   </head>
   <body class={cn("flex flex-col min-h-screen", bodyClass)}>
     <slot />
     <TailwindIndicator />
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="flex flex-col">
+            <button class="close bg-red-500 rounded-t-lg text-lg font-bold shadow-lg shadow-red-800" id="closeModalExit">Close</button>
+            <img class="modal-content rounded-b-lg shadow-lg shadow-purple-800" id="modalImg">
+        </div>
+    </div?>
+    <script>
+    // Get all elements with the class "modal-trigger"
+    let modalTriggers = document.getElementsByTagName("img");
+    let modalOpen = false;
+    // Add click event listeners to all elements
+    for (let i = 0; i < modalTriggers.length; i++) {
+        modalTriggers[i].addEventListener("click", function() {
+        openModal(this);
+        });
+    }
+
+    // Function to open the modal and display the clicked image
+    function openModal(img) {
+        let modal = document.getElementById("myModal");
+        let modalImg = document.getElementById("modalImg");
+
+        modal.style.display = "block";
+        modalImg.src = img.src;
+    }
+
+    let closeModalExit = document.getElementById("closeModalExit");
+
+    closeModalExit.addEventListener("click", function() {
+        closeModal();
+    });
+
+    // Function to close the modal
+    function closeModal() {
+        let modal = document.getElementById("myModal");
+        modal.style.display = "none";
+
+        console.log('here asdas');
+    }
+    </script>
+
   </body>
 </html>

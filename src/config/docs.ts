@@ -77,6 +77,15 @@ export const docsConfig: DocsConfig = {
         }
       ],
     },
+    {
+        title: "Master Chat",
+        items: [
+          {
+            title: "Introduction 🫡 (docs)",
+            href: "/MasterInventoryDocs/docs/documentation/master-ui-index",
+          }
+        ],
+      },
     // {
     //   title: "Marketing Site",
     //   items: [
