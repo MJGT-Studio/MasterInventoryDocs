@@ -13,6 +13,7 @@ Master Http Request Unreal Engine 5 plugin is designed to simplify HTTP requests
 - [Master Request](#master-request)
 - [Master Request With Payload And Headers](#master-request-with-payload-and-headers)
 - [Master Request Async](#master-request-async)
+- [Master Request With Payload And Headers Async](#master-request-with-payload-and-headers-async)
 - [Decode Json](#decode-json)
 - [Decode Nested Json](#decode-nested-json)
 
@@ -45,6 +46,12 @@ Master Http Request Unreal Engine 5 plugin is designed to simplify HTTP requests
 This node is the same as the previous one, but it is async, so it will not block the main thread, executing the response in an event.
 
 ![Master Request With Payload And Headers Async](/MasterInventoryDocs/masterHttp/MasterRequestHeaderBodyAsync.png)
+
+# Master Request With Payload And Headers Async Without Encoding
+
+This node is the same as the previous one, but it is async and does not encode the body payload and headers so you can send raw data.
+
+![Master Request With Payload And Headers Async](/MasterInventoryDocs/masterHttp/MasterRequestHeaderBodyAsyncWithoutEncoding.png)
 
 #### Inputs
 
